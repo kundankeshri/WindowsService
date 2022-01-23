@@ -1,0 +1,21 @@
+
+<table class="table table-striped table-bordered" style="width:100%">
+  <thead>
+    <tr>
+      <th scope="col">SERVICE NAME</th>
+      <th scope="col">DISPLAY NAME</th>
+      <th scope="col">TYPE</th>
+      <th scope="col">STATE</th>
+    </tr>
+  </thead>
+  <tbody>
+       {{#each objList}}
+    <tr>
+     <td>{{this.serviceName}}</td>
+     <td>{{this.displayName}}</td>
+     <td>{{this.type}}</td>
+      <td>{{this.state}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
